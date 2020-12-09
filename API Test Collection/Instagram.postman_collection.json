@@ -1,0 +1,295 @@
+{
+	"info": {
+		"_postman_id": "f945fad1-ba3d-4ad3-bc8c-ed2ade13fa02",
+		"name": "Instagram",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Postman01-Log in",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "7bb3e993-a0a4-4b5d-98ab-986089a4b61c",
+						"exec": [
+							"pm.test(\"Verify status code 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Response time is less than 500ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(500);\r",
+							"});\r",
+							"\r",
+							"\r",
+							"\r",
+							"  \r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [],
+					"options": {
+						"formdata": {}
+					}
+				},
+				"url": {
+					"raw": "https://www.instagram.com/web/likes/2363992332176863955/like/\n",
+					"protocol": "https",
+					"host": [
+						"www",
+						"instagram",
+						"com"
+					],
+					"path": [
+						"web",
+						"likes",
+						"2363992332176863955",
+						"like",
+						"\n"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Postman02-View story",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "729bd188-f828-486b-8dde-2f4990e0ae1b",
+						"exec": [
+							"pm.test(\"Verify status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Response time is less than 500ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(500);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.instagram.com/static/bundles/es6/DesktopStoriesPage.js/1610a2c36656.js",
+					"protocol": "https",
+					"host": [
+						"www",
+						"instagram",
+						"com"
+					],
+					"path": [
+						"static",
+						"bundles",
+						"es6",
+						"DesktopStoriesPage.js",
+						"1610a2c36656.js"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Postman03-View photo",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "1fbe9103-dd6f-4fe1-ab82-e10b208e37da",
+						"exec": [
+							"pm.test(\"Verify json\", function () {\r",
+							"    pm.response.to.be.json;\r",
+							"});\r",
+							"pm.test(\"Response time is less than 4000ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(4000);\r",
+							"});\r",
+							"pm.test(\"Verify status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.instagram.com/graphql/query/?query_hash=2418469a2b4d9b47ae7bec08e3ec53ad&variables=%7B%22shortcode%22%3A%22B9_440DAyvZ%22%2C%22child_comment_count%22%3A3%2C%22fetch_comment_count%22%3A40%2C%22parent_comment_count%22%3A24%2C%22has_threaded_comments%22%3Atrue%7D",
+					"protocol": "https",
+					"host": [
+						"www",
+						"instagram",
+						"com"
+					],
+					"path": [
+						"graphql",
+						"query",
+						""
+					],
+					"query": [
+						{
+							"key": "query_hash",
+							"value": "2418469a2b4d9b47ae7bec08e3ec53ad"
+						},
+						{
+							"key": "variables",
+							"value": "%7B%22shortcode%22%3A%22B9_440DAyvZ%22%2C%22child_comment_count%22%3A3%2C%22fetch_comment_count%22%3A40%2C%22parent_comment_count%22%3A24%2C%22has_threaded_comments%22%3Atrue%7D"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Postman04-View video",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "bc678ba2-431a-47e5-b969-c0f3f7bf7e0a",
+						"exec": [
+							"pm.test(\"Response time is less than 4000ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(4000);\r",
+							"});\r",
+							"pm.test(\"Verify status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Verify json\", function () {\r",
+							"    pm.response.to.be.json;\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.instagram.com/graphql/query/?query_hash=2418469a2b4d9b47ae7bec08e3ec53ad&variables=%7B%22shortcode%22%3A%22B89XKW8A-cL%22%2C%22child_comment_count%22%3A3%2C%22fetch_comment_count%22%3A40%2C%22parent_comment_count%22%3A24%2C%22has_threaded_comments%22%3Atrue%7D",
+					"protocol": "https",
+					"host": [
+						"www",
+						"instagram",
+						"com"
+					],
+					"path": [
+						"graphql",
+						"query",
+						""
+					],
+					"query": [
+						{
+							"key": "query_hash",
+							"value": "2418469a2b4d9b47ae7bec08e3ec53ad"
+						},
+						{
+							"key": "variables",
+							"value": "%7B%22shortcode%22%3A%22B89XKW8A-cL%22%2C%22child_comment_count%22%3A3%2C%22fetch_comment_count%22%3A40%2C%22parent_comment_count%22%3A24%2C%22has_threaded_comments%22%3Atrue%7D"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Postman05-Like photo",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "744b1751-f489-4530-b509-58599b27a866",
+						"exec": [
+							"pm.test(\"Verify status code 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Response time is less than 500ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(500);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://www.instagram.com/web/likes/2443537489117533404/like/",
+					"protocol": "https",
+					"host": [
+						"www",
+						"instagram",
+						"com"
+					],
+					"path": [
+						"web",
+						"likes",
+						"2443537489117533404",
+						"like",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Postman06-Save post",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "038cea60-49ea-44b7-8b7d-3aacd662dc20",
+						"exec": [
+							"pm.test(\"Verify status code 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Response time is less than 500ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(500);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://www.instagram.com/web/save/2443537489117533404/save/",
+					"protocol": "https",
+					"host": [
+						"www",
+						"instagram",
+						"com"
+					],
+					"path": [
+						"web",
+						"save",
+						"2443537489117533404",
+						"save",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

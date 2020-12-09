@@ -1,0 +1,252 @@
+{
+	"id": "807a9832-238c-4f5b-ac22-5780547bdb3d",
+	"name": "Instagram",
+	"timestamp": "2020-11-26T11:46:35.448Z",
+	"collection_id": "f945fad1-ba3d-4ad3-bc8c-ed2ade13fa02",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 14,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "dd7ce5d3-32af-4a56-9625-8e5d7b4bfb15",
+			"name": "Postman01-Log in",
+			"url": "https://www.instagram.com/web/likes/2363992332176863955/like/%0A",
+			"time": 328,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Verify status code 200": true,
+				"Response time is less than 500ms": true
+			},
+			"testPassFailCounts": {
+				"Verify status code 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				328
+			],
+			"allTests": [
+				{
+					"Verify status code 200": true,
+					"Response time is less than 500ms": true
+				}
+			]
+		},
+		{
+			"id": "3df3410f-b4f6-46a5-ad20-f6e2fcc70e6e",
+			"name": "Postman02-View story",
+			"url": "https://www.instagram.com/static/bundles/es6/DesktopStoriesPage.js/1610a2c36656.js",
+			"time": 60,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Verify status code is 200": true,
+				"Response time is less than 500ms": true
+			},
+			"testPassFailCounts": {
+				"Verify status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				60
+			],
+			"allTests": [
+				{
+					"Verify status code is 200": true,
+					"Response time is less than 500ms": true
+				}
+			]
+		},
+		{
+			"id": "f36669e8-5e0b-430a-a26a-3f5cd60e2aaa",
+			"name": "Postman03-View photo",
+			"url": "https://www.instagram.com/graphql/query/?query_hash=2418469a2b4d9b47ae7bec08e3ec53ad&variables=%7B%22shortcode%22%3A%22B9_440DAyvZ%22%2C%22child_comment_count%22%3A3%2C%22fetch_comment_count%22%3A40%2C%22parent_comment_count%22%3A24%2C%22has_threaded_comments%22%3Atrue%7D",
+			"time": 3845,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Verify json": true,
+				"Response time is less than 4000ms": true,
+				"Verify status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Verify json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 4000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				3845
+			],
+			"allTests": [
+				{
+					"Verify json": true,
+					"Response time is less than 4000ms": true,
+					"Verify status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "490da015-91a9-4151-8006-e28963468339",
+			"name": "Postman04-View video",
+			"url": "https://www.instagram.com/graphql/query/?query_hash=2418469a2b4d9b47ae7bec08e3ec53ad&variables=%7B%22shortcode%22%3A%22B89XKW8A-cL%22%2C%22child_comment_count%22%3A3%2C%22fetch_comment_count%22%3A40%2C%22parent_comment_count%22%3A24%2C%22has_threaded_comments%22%3Atrue%7D",
+			"time": 293,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 4000ms": true,
+				"Verify status code is 200": true,
+				"Verify json": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 4000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify json": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				293
+			],
+			"allTests": [
+				{
+					"Response time is less than 4000ms": true,
+					"Verify status code is 200": true,
+					"Verify json": true
+				}
+			]
+		},
+		{
+			"id": "5216d2c8-e019-4a37-82ec-8c333d4feae4",
+			"name": "Postman05-Like photo",
+			"url": "https://www.instagram.com/web/likes/2443537489117533404/like/",
+			"time": 280,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Verify status code 200": true,
+				"Response time is less than 500ms": true
+			},
+			"testPassFailCounts": {
+				"Verify status code 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				280
+			],
+			"allTests": [
+				{
+					"Verify status code 200": true,
+					"Response time is less than 500ms": true
+				}
+			]
+		},
+		{
+			"id": "efd833fc-e7fa-47ee-b09f-7afc28c4e2ea",
+			"name": "Postman06-Save post",
+			"url": "https://www.instagram.com/web/save/2443537489117533404/save/",
+			"time": 197,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Verify status code 200": true,
+				"Response time is less than 500ms": true
+			},
+			"testPassFailCounts": {
+				"Verify status code 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				197
+			],
+			"allTests": [
+				{
+					"Verify status code 200": true,
+					"Response time is less than 500ms": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 5003,
+	"collection": {
+		"requests": [
+			{
+				"id": "dd7ce5d3-32af-4a56-9625-8e5d7b4bfb15",
+				"method": "POST"
+			},
+			{
+				"id": "3df3410f-b4f6-46a5-ad20-f6e2fcc70e6e",
+				"method": "GET"
+			},
+			{
+				"id": "f36669e8-5e0b-430a-a26a-3f5cd60e2aaa",
+				"method": "GET"
+			},
+			{
+				"id": "490da015-91a9-4151-8006-e28963468339",
+				"method": "GET"
+			},
+			{
+				"id": "5216d2c8-e019-4a37-82ec-8c333d4feae4",
+				"method": "POST"
+			},
+			{
+				"id": "efd833fc-e7fa-47ee-b09f-7afc28c4e2ea",
+				"method": "POST"
+			}
+		]
+	}
+}
