@@ -11,12 +11,19 @@ For testing the application I used manual testing performing 33 test cases ( 2 f
 TESTING TIPES:
 
 Smoke testing:E2E Testing
+
 Exploratory testing: search bar;
+
 Negative testing: login, search bar;
+
 Security testing: password hidden;
+
 Compability and cross-browser testing: desktop, mobile, different browsers: Google Chrome, Internet Explorer, Microsof Edge;
+
 API testing with Postman : login, view story, view photo, like photo, save post;
+
 Regression and automated testing using Cypress with JavaScript;
+
 TESTS RESULTS:
 
 Functional : 25 tests- all passed
@@ -26,20 +33,33 @@ Non-functional : 9 tests - 2 failed, 1 defect found
 CONCLUSIONS:
 
 33 manual tests were executed (2 failed)
+
 18 automated tests were executed (all passed)
+
 14 API tests using Postman (all passed)
+
 TOOLS USED:
 
 Xmind – Mind map
+
 MicrosofOffice– Test report, presentation
+
 ScreenToGif – Video
+
 Snipping Tool– Screenshots
+
 TestLink-Test cases, Test execution
+
 Postman- API Testing
+
 Visual Studio Code – Automated testing
+
 LESSONS LEARNED:
 
 Be organized- create a mindmap
+
 Start with Exploratory Testing
+
 Write clear test cases
+
 Not all tests can be automated
